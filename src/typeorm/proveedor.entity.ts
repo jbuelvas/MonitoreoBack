@@ -27,16 +27,34 @@ export class Proveedor {
   url_consulta_imagen: string;
 
   @Column({
-    nullable: false,
+    nullable: true,
     default: '',
   })
   url_vista_imagen: string;
 
   @Column({
-    nullable: false,
+    nullable: true,
     default: '',
   })
   api_key: string;
+
+  @Column({
+    nullable: true,
+    default: '',
+  })
+  url_access_token: string;
+
+  @Column({
+    nullable: true,
+    default: '',
+  })
+  client_id: string;
+
+  @Column({
+    nullable: true,
+    default: '',
+  })
+  client_secret: string;
 
   @Column({
     nullable: false,

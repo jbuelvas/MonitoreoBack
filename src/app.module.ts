@@ -8,6 +8,8 @@ import { UsuarioModule } from './usuario/usuario.module';
 import { PlanModule } from './plan/plan.module';
 import { MonitoreoModule } from './monitoreo/monitoreo.module';
 import { ResultadoModule } from './resultado/resultado.module';
+import { ProveedorModule } from './proveedor/proveedor.module';
+import { HttpModule, HttpService } from '@nestjs/axios';
 import entities from './typeorm';
 
 @Module({
@@ -34,6 +36,8 @@ import entities from './typeorm';
     PlanModule,
     MonitoreoModule,
     ResultadoModule,
+    ProveedorModule,
+    HttpModule
   ],
   controllers: [],
   providers: [],

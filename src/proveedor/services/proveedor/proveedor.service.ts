@@ -46,7 +46,7 @@ export class ProveedorService {
     body.drf_field_name = "acquired"
     body.rf_field_name = "cloud_cover"
     body.rf_gte = 0
-    body.rf_lte = 0.5
+    body.rf_lte = body.cobertura_nubes
     body.gf_coordenadas = body.coordenadas
     body.drf_gte = `${body.fecha_inicial}T00:00:00Z`
     body.drf_lte = `${body.fecha_final}T00:00:00Z`

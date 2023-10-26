@@ -8,6 +8,11 @@ export class ProveedorDto {
   @ApiProperty()
   proveedor: string;
 
+  @IsOptional()
+  @IsString()
+  @ApiProperty()
+  cobertura_nubes: number;
+
   @IsNotEmpty()
   @IsString()
   @ApiProperty()

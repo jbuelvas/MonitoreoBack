@@ -1,0 +1,3 @@
+nest generate module area_interes
+nest g controller area_interes/controllers/area_interes
+nest g service area_interes/services/area_interes

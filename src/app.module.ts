@@ -10,6 +10,7 @@ import { MonitoreoModule } from './monitoreo/monitoreo.module';
 import { ResultadoModule } from './resultado/resultado.module';
 import { ProveedorModule } from './proveedor/proveedor.module';
 import { HttpModule, HttpService } from '@nestjs/axios';
+import { AreaInteresModule } from './area-interes/area-interes.module';
 import entities from './typeorm';
 
 @Module({
@@ -37,7 +38,8 @@ import entities from './typeorm';
     MonitoreoModule,
     ResultadoModule,
     ProveedorModule,
-    HttpModule
+    HttpModule,
+    AreaInteresModule
   ],
   controllers: [],
   providers: [],

@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { AreaInteres } from './area_interes.entity';
 
 @Entity()
 export class Usuario {
@@ -56,4 +57,7 @@ export class Usuario {
 
   @Column({ type: "timestamp", nullable: true })
   fecha_actualizacion: Date;
+
+  @OneToMany(() => AreaInteres, (aoi: AreaInteres) => aoi.usuario)
+  public areas: AreaInteres[];
 }

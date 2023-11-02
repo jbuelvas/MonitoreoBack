@@ -6,8 +6,9 @@ import { Analisis } from "./analisis.entity";
 import { Monitoreo } from "./monitoreo.entity";
 import { Resultado } from "./resultado.entity";
 import { Proveedor } from "./proveedor.entity";
+import { AreaInteres } from "./area_interes.entity";
 
-const entities = [User, Customer, Usuario, Plan, Analisis, Monitoreo, Resultado, Proveedor];
+const entities = [User, Customer, Usuario, Plan, Analisis, Monitoreo, Resultado, Proveedor, AreaInteres];
 
-export {User, Customer, Usuario, Plan, Analisis, Monitoreo, Resultado, Proveedor};
+export {User, Customer, Usuario, Plan, Analisis, Monitoreo, Resultado, Proveedor, AreaInteres};
 export default entities;
